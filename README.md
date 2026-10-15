@@ -1,7 +1,6 @@
 # tarifas-t2
 
-Servicio que calcula lo que se le cobra a una tarjeta por sus validaciones en
-la Línea T2.
+Servicio que calcula el cobro de una tarjeta por sus validaciones en la Línea T2, incluyendo reglas de transbordos y descuentos según el perfil del usuario.
 
 ## Correr local
 
@@ -19,10 +18,12 @@ Documentación interactiva en http://localhost:8000/docs
 
 ```
 pytest
+python -m pytest -v  ---> Prueba completa
 ```
 
 ## Docker
 
 ```
 docker compose up --build
+docker compose down         ----> Detener
 ```
